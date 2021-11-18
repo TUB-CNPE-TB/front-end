@@ -13,6 +13,7 @@ _________________________________________________________ -->
             </a>
         </div>
         <!--/.navbar-header -->
+        <div class="navbar-collapse collapse" id="navhelloworld">NavHelloworld</div>
 
         <div class="navbar-collapse collapse" id="navigation">
 
@@ -205,6 +206,7 @@ _________________________________________________________ -->
         $.ajaxSetup({
             contentType: "application/json; charset=utf-8"
         });
+        $("#navhelloworld").load("helloworld.html")
 
         if ($.cookie('logged_in') == null || $.cookie('logged_in') == "") {
             $("#tabAccount").remove()

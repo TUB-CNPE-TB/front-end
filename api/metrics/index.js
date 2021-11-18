@@ -1,6 +1,6 @@
 (function (){
   'use strict';
-  const apiRoutes = ['cart', 'catalogue', 'orders', 'user'];
+  const apiRoutes = ['cart', 'catalogue', 'orders', 'user','helloworld'];
   var express = require("express")
     , client  = require('prom-client')
     , app     = express()

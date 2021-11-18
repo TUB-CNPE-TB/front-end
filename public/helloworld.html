@@ -1,0 +1,12 @@
+<div id="hi">Calling helloworld? Answer:
+</div>
+<script>
+    $(document).ready(function () {
+        $('#hi').append("Calling document Ready");
+    });
+    $.getJSON('/helloworld', {}, function (data) {
+        $('hi').text(data);
+        }).error(function () {
+            $('#hi').text("Error on API Call.");
+        });
+</script>
