@@ -15,7 +15,7 @@ var request      = require("request")
   , orders       = require("./api/orders")
   , user         = require("./api/user")
   , metrics      = require("./api/metrics")
-  , go_hello_world = require("./api/helloworld")
+  , helloWorld   = require("./api/helloworld")
   , app          = express()
 
 
@@ -52,7 +52,7 @@ app.use(cart);
 app.use(catalogue);
 app.use(orders);
 app.use(user);
-app.use(go_hello_world);
+app.use(helloWorld);
 
 app.use(helpers.errorHandler);
 

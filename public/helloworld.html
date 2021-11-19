@@ -1,11 +1,11 @@
-<div id="hi">Calling helloworld? Answer:
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<div id="hi"></div>
+
 <script>
-    $(document).ready(function () {
-        $('#hi').append("Calling document Ready");
-    });
     $.getJSON('/helloworld', {}, function (data) {
-        $('hi').text(data);
+        $('#hi').text(data.message);
         }).error(function () {
             $('#hi').text("Error on API Call.");
         });
