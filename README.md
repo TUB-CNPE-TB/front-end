@@ -7,6 +7,11 @@ Front-end app
 ---
 Front-end application written in [Node.js](https://nodejs.org/en/) that puts together all of the microservices under [microservices-demo](https://github.com/microservices-demo/microservices-demo).
 
+# Quick docker
+
+1. Build node project `npm isntall`
+1. Build docker image `docker build -t jmgoyesc/front-end .`
+1. Publish docker image to docker hub `docker push jmgoyesc/dsp-front-end`
 # Build
 
 ## Dependencies
