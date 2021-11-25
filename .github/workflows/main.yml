@@ -75,7 +75,7 @@ jobs:
 
     #
     #
-    # Push to GAR
+    # Push to GAR 
     - name: Push to GAR
       uses: docker/build-push-action@v1
       if: startsWith(github.ref, 'refs/tags/v') || github.ref == 'refs/heads/master'
