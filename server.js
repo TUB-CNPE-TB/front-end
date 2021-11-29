@@ -1,3 +1,5 @@
+const { helloworld } = require("./api/endpoints");
+
 var request      = require("request")
   , express      = require("express")
   , morgan       = require("morgan")
@@ -13,6 +15,7 @@ var request      = require("request")
   , orders       = require("./api/orders")
   , user         = require("./api/user")
   , metrics      = require("./api/metrics")
+  , helloWorld   = require("./api/helloworld")
   , app          = express()
 
 
@@ -49,6 +52,7 @@ app.use(cart);
 app.use(catalogue);
 app.use(orders);
 app.use(user);
+app.use(helloWorld);
 
 app.use(helpers.errorHandler);
 

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<div id="hiwrapper" class="nav navbar-nav navbar-left"><li><a id ="hi">Loading Hello World</a></li></div>
+
+<script>
+    $(document).ready(function () {
+        $.getJSON('/helloworld', {}, function (data) {
+            $('#hi').text(data.message);
+            }).error(function () {
+                $('#hi').text("Error on loading \n Helloworld "+data);
+            });
+    });
+</script>

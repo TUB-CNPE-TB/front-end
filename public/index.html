@@ -123,6 +123,7 @@ _________________________________________________________ -->
         <!-- /#advantages -->
 
         <!-- *** ADVANTAGES END *** -->
+        <div id="helloworld">Helloworld wrapper</div>
 
         <!-- *** HOT PRODUCT SLIDESHOW ***
 _________________________________________________________ -->
@@ -182,6 +183,7 @@ _________________________________________________________ -->
         $("#topbar").load("topbar.html");
         $("#navbar").load("navbar.html");
         $("#footer").load("footer.html");
+        $("#helloworld").load("helloworld.html");
 
         $.getJSON('/catalogue', {size: 5}, function (data) {
             if (data != null) {
